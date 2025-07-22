@@ -6,6 +6,7 @@ import { Languages, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { API_BASE_URL } from '@/constants/config';
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -50,17 +51,22 @@ export default function Header() {
         return;
       }
 
-      const response = await axios.get("http://localhost:5000/api/search", {
-        params: {
-          query: trimmedQuery,
-          context,
-          projectId,
-          folderId,
-        },
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+     const response = await axios.post(
+  "https://inspector-backend-6q2a.onrender.com/api/search",
+  {
+    query: trimmedQuery,
+    context,
+    projectId,
+    folderId,
+  },
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+);
+
+
 
       console.log("📥 Full search response:", response.data);
 
