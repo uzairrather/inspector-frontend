@@ -1,0 +1,15 @@
+{
+  "welcome": "Welcome to Asset Inspector",
+  "selectCompany": "Select a Company",
+  "loginButton": "Login",
+  "passwordLabel": "Password",
+  "emailLabel": "Email",
+  "loginDesc":"Access your Asset Inspector Pro account.",
+  "loginTitle" : "Please Login",
+  "fullName" : "Full Name",
+  "signupTitle" : "Please Create An Account",
+  "signupDesc" : "Join Asset Inspector Pro today.",
+  "companyNameLabel" : "Company Name",
+  "signupButton" : "Sign Up",
+  "signupSuccessDesc" : "User Registered Successfully"
+}

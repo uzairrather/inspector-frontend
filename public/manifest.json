@@ -1,0 +1,20 @@
+{
+  "name": "Asset Inspection PWA",
+  "short_name": "Inspection",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "type": "vite.svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/vite.svg",
+      "type": "vite.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
